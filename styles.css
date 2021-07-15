@@ -1,11 +1,3 @@
-body {
-    background-image: url("assets/backgrounddesert.png"), url("assets/backgroundplanet.png"), url("assets/backgroundsun.png");
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: bottom, bottom, top;
-    margin: 0;
-}
-
 header {
     display: flex;
     justify-content: center;
@@ -15,10 +7,19 @@ header {
 .menu {
     font-size: 1.1em;
     background: whitesmoke;
+    background-image: linear-gradient(to bottom right, lightsteelblue, whitesmoke);
     padding: 5px 15px;
     margin: 5px;
     border-radius: 3px;
-    box-shadow: 1.5px 1px 0 0 blueviolet;
+    box-shadow: 3px 2px 0 0 blueviolet;
+}
+
+body {
+    background-image: url("assets/backgrounddesert.png"), url("assets/backgroundplanet.png"), url("assets/backgroundsun.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom, bottom, top;
+    margin: 0;
 }
 
 main {
@@ -29,14 +30,22 @@ main {
 h1 {
     padding: 0.9em;
     font-size: medium;
-    background-color: rgba(0,0,0,0.25);
+    background-color: rgba(0,0,0,0.5);
     border-radius: 25px;
 }
 
 /* page-container created to keep avatar fixed at bottom of viewport */
+
 #page-container {
     position: relative;
     min-height: 100vh;
+}
+
+.fix {
+    position: fixed;
+    bottom: 0px;
+    left: 6px;
+    max-height: 235px;
 }
 
 footer {
@@ -56,24 +65,43 @@ p {
     font-size: small;
 }
 
-.fix {
-    position: fixed;
-    bottom: 0px;
-    left: 6px;
-    max-height: 235px;
+/* media queries for responsive layout */
+
+/* responsive layout for medium screens such as ipads */
+
+@media only screen and (min-width: 460px) and (max-width: 840px) {
+
+    header {
+        justify-content: flex-end;
+    }
+
+    .menu {
+        font-size: 1.9em;
+    }
+    
+    body {
+        background-size: cover;
+    }
+
+    main {
+        justify-content: space-around;
+    }
+
+    h1 {
+        max-width: 450px;
+        font-size: 1.3em;
+        margin-top: 60px;
+    }
+
+    .fix {
+        max-height: 320px;
+    }
 }
 
-.fixed {
-    position: fixed;
-    bottom: 30px;
-    left: 125px;
-    max-height: 134px;
-}
+/* responsive layout for large screens such as computers */
 
-.talkingtext {
-    position: fixed;
-    bottom: 40px;
-    left: 180px;
-    right: 13px;
-    font-family: 'Press Start 2P', monospace;  
+@media only screen and (min-width: 1008px) {
+
+
+
 }
