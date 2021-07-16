@@ -5,22 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="javascript/images.js"></script>
     <title>Nathan Lloyd's Portfolio Page</title>
 </head>
 <body>
     <div id="page-container">
         <header>
-            <div class="menu">Home</div>
-            <div class="menu">Skills</div>
-            <div class="menu">Contact</div>
-            <div class="menu">Resume</div>
+            <button type="button" class="menu" onclick="homefunction()">Home</button>
+            <button type="button" class="menu" onclick="biofunction()">Bio</button>
+            <button type="button" class="menu" onclick="projectsfunction()">Projects</button>
+            <button type="button" class="menu">Resume</button>
         </header>
         <main>
             <h1>“Remember to look up at the stars and not down at your feet. Try to make sense of what you see and wonder about what makes the universe exist. Be curious. And however difficult life may seem, there is always something you can do and succeed at.
                     It matters that you don't just give up.” <br>
                     ― Stephen Hawking</h1>
-        </main>  
-        <img src="assets/avatartext1.png" class="fix" alt="talking character animation"/>
+        </main> 
+            <div class="content">
+                <img src="assets/characterbio2.png" class="bio" id="bio" alt="character bio"/>
+                <img src="assets/projects2.png" class="projects" id="projects" alt="projects"/>
+            </div> 
+        <img src="assets/avatartext1.png" class="fix" alt="character avatar"/>
+
         <footer>
             <p>&copy 2021 Nathan Lloyd</p>
         </footer> 
