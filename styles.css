@@ -65,8 +65,6 @@ h1 {
     display: none;
 }
 
-/* page-container created to keep avatar fixed at bottom of viewport */
-
 #page-container {
     position: relative;
     min-height: 100vh;

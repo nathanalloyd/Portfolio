@@ -27,3 +27,7 @@ const projectsfunction = () => {
     document.getElementById("avatar3").style.display ='none'
     document.getElementById("avatar4").style.display ='block'
 }
+
+const resumefunction = () => {
+    document.getElementById("resume.docx")
+}
