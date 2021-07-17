@@ -39,6 +39,13 @@ h1 {
     font-size: medium;
     background-color: rgba(0,0,0,0.5);
     border-radius: 25px;
+    animation-duration: 2s;
+    animation-name: fallin;
+}
+
+@keyframes fallin {
+    from {margin-bottom: 90%;}
+    to {margin-bottom: 30%;}
 }
 
 .bio {
