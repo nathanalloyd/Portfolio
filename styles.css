@@ -49,6 +49,14 @@ h1 {
     display: none;
 }
 
+.skills {
+    max-width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    display: none;
+}
+
 .projects {
     max-width: 330px;
     margin-left: auto;
@@ -71,9 +79,17 @@ h1 {
     max-height: 235px;
 }
 
+.fix2 {
+    position: fixed;
+    bottom: 0px;
+    left: 6px;
+    max-height: 235px;
+    display: none;
+}
+
 footer {
     color: whitesmoke;
-    background-color: darkslategrey;
+    background-color: black;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -121,11 +137,19 @@ p {
         max-width: 450px;
     }
 
+    .skills {
+        max-width: 450px;
+    }
+
     .projects {
         max-width: 450px;
     }
 
     .fix {
+        max-height: 320px;
+    }
+
+    .fix2 {
         max-height: 320px;
     }
 }
@@ -163,11 +187,20 @@ p {
         min-width: 38vw;
     }
 
+    .skills {
+        min-width: 38vw;
+    }
+
     .projects {
         min-width: 38vw;
     }
 
     .fix {
+        max-height: 350px;
+        margin-left: 2vw;
+    }
+
+    .fix2 {
         max-height: 350px;
         margin-left: 2vw;
     }
